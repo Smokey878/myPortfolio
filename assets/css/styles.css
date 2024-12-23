@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+/* Variables */
+:root {
+  --font-family: "Cantata One", serif;
+  --paragraph-font: "Josefin Sans", serif;
+  --normal-font: 400;
+  --bold-font: 500;
+  --bolder-font: 600;
+  --bg-color: #141414;
+  --primary-color: #A67C00;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #1E1D1D;
+  color: #D8DDE0;
+}
+
+nav {
+    position: sticky;
+    top: 1;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 11rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+    font-family: var(--paragraph-font);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 75rem;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+  }
+
+  .hero img {
+    max-width: 40rem;
+    height:auto;
+    width: 30rem;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  .bio {
+    width: 28rem;
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    background-color: var(--bg-color);
+    margin-top: 2rem;
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+    font-family: var(--font-family);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    font-family: var(--paragraph-font);
+
+  }
