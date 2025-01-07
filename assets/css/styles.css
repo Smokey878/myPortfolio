@@ -301,23 +301,11 @@ nav {
     height: 2rem;
   }
 
-  footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
+  .content {
+    min-height: calc(100vh - 100px); /* Adjust 100px to the height of your footer */
   }
 
-  .scroll-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 3%;
-    cursor: pointer;
-  }
+
   
-  .up-arrow {
-    width: 3rem;
-    height: 3rem;
-  }
 
   
